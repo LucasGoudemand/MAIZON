@@ -1,0 +1,77 @@
+.caroucel {
+  position: relative;
+}
+.imagesLogements {
+  border-radius: 15px 15px 15px 15px;
+  width: 100%;
+  height: 415px;
+  object-fit: cover;
+  margin-top: 20px;
+}
+.fadeEffectIn {
+  animation: fadekeyframeIn 1s ease-in-out;
+  opacity: 1;
+}
+@keyframes fadekeyframeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.container-img {
+  display: none;
+}
+.pageNumber {
+  position: absolute;
+  font-size: 18px;
+  color: white;
+  left: 48%;
+  margin-top: -50px;
+}
+.buttonSliderLeft {
+  background: none;
+  border: none;
+  position: absolute;
+  left: 10px;
+  top: 200px;
+  transition: 1s ease-in-out;
+}
+.buttonSliderLeft:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  transition: 1s ease-in-out;
+}
+.buttonSliderRight {
+  background: none;
+  border: none;
+  position: absolute;
+  right: 10px;
+  top: 200px;
+  transition: 1s ease-in-out;
+}
+.buttonSliderRight:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  transition: 1s ease-in-out;
+}
+.arrowSlider {
+  height: 100px;
+}
+@media all and (max-width: 968px) {
+  .imagesLogements {
+    height: 255px;
+  }
+  .buttonSliderLeft {
+    left: 10px;
+    top: 120px;
+  }
+  .buttonSliderRight {
+    right: 10px;
+    top: 120px;
+  }
+  .arrowSlider {
+    height: 50px;
+  }
+}

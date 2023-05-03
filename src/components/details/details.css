@@ -1,0 +1,92 @@
+.containerDetails {
+  width: 100%;
+}
+summary {
+  background-color: #ff6060;
+  color: white;
+  padding: 10px;
+  border-radius: 10px 10px 10px 10px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+}
+details {
+  background-color: rgba(246, 246, 246, 1);
+  border-radius: 15px 15px;
+  color: #ff6060;
+  font-size: 24px;
+  margin-top: 30px;
+  position: relative;
+}
+details p {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  color: #ff6060;
+}
+details[open] .arrow {
+  transform: rotate(-90deg);
+}
+.arrow {
+  position: absolute;
+  width: 15px;
+  height: 20px;
+  right: 40px;
+  transition: transform 0.2s ease-in-out;
+  transform: rotate(90deg);
+}
+.listPropsText {
+  padding-left: 20px;
+  padding-bottom: 20px;
+  font-size: 18px;
+}
+.titlePropsText {
+  font-size: 18px;
+}
+@media (min-width: 375px) and (max-width: 767px) {
+  .containerDescription {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+  }
+  .containerDetailledRight {
+    width: 100%;
+  }
+
+  .containerDetailledLeft {
+    width: 100%;
+  }
+  .details {
+    font-size: 13px;
+  }
+  .arrow {
+    width: 8px;
+    height: 13px;
+  }
+  .titlePropsText {
+    font-size: 12px;
+  }
+
+  .listPropsText {
+    font-size: 12px;
+  }
+}
+@media (min-width: 768px) and (max-width: 968px) {
+  .details {
+    font-size: 15px;
+  }
+  .arrow {
+    width: 10px;
+    height: 16px;
+  }
+  .titlePropsText {
+    font-size: 15px;
+  }
+
+  .listPropsText {
+    font-size: 15px;
+  }
+}

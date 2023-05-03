@@ -1,0 +1,41 @@
+header {
+  display: flex;
+  width: 100%;
+}
+.logoKasa {
+  width: 210px;
+  text-decoration: none;
+}
+.navMenu {
+  text-decoration: none;
+  color: #ff6060;
+  border: 10px;
+  margin-left: 20px;
+  font-size: 24px;
+}
+.navMenu:hover,
+.navMenu.active {
+  border-bottom: solid currentColor;
+}
+.navBar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+}
+@media (min-width: 375px) and (max-width: 767px) {
+  .logoKasa {
+    width: 150px;
+  }
+  .navMenu {
+    font-size: 12px;
+  }
+}
+@media (min-width: 768px) and (max-width: 968px) {
+  .logoKasa {
+    width: 180px;
+  }
+  .navMenu {
+    font-size: 18px;
+  }
+}
