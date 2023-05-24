@@ -28,13 +28,14 @@
   padding-right: 20px;
   background-color: #ff6060;
   color: white;
-
+  min-width: 100px;
   text-align: center;
   border-radius: 10px 10px 10px 10px;
   margin-right: 10px;
 }
 .TagsContainer {
   display: flex;
+  flex-wrap: wrap;
   margin-top: 10px;
 }
 .fullStar {
@@ -105,12 +106,12 @@
   .fullStar {
     width: 15px;
     height: 15px;
-    margin-left: 5px;
+    margin-left: 1px;
   }
   .emptyStar {
     width: 15px;
     height: 15px;
-    margin-left: 5px;
+    margin-left: 1px;
   }
   .containerInfo {
     flex-wrap: wrap;
@@ -145,14 +146,14 @@
     font-size: 15px;
   }
   .fullStar {
-    width: 13px;
-    height: 13px;
-    margin-left: 5px;
+    width: 15px;
+    height: 15px;
+    margin-left: 1px;
   }
   .emptyStar {
-    width: 13px;
-    height: 13px;
-    margin-left: 5px;
+    width: 15px;
+    height: 15px;
+    margin-left: 1px;
   }
 
   .containerLeftTags {
@@ -160,8 +161,8 @@
     height: 18px;
     padding-left: 5px;
     padding-right: 5px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     font-size: 10px;
   }
 }

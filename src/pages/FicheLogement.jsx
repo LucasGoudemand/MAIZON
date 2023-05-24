@@ -22,9 +22,11 @@ function FicheLogement(props) {
         </Helmet>
         <div className="ContainerMain">
           <Header />
-          <Slider logements={appartement} />
-          <Description logements={appartement} />
-          <DescriptionDetailled logements={appartement} />
+          <section>
+            <Slider logements={appartement} />
+            <Description logements={appartement} />
+            <DescriptionDetailled logements={appartement} />
+          </section>
         </div>
         <Footer />
       </div>

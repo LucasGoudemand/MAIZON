@@ -17,11 +17,15 @@ function Home() {
         </Helmet>
         <div className="ContainerMain">
           <Header />
-          <Banner
-            backgroundImage={background}
-            Title="Chez vous, partout et ailleurs"
-          />
-          <Cards logements={logements} />
+          <section>
+            <Banner
+              backgroundImage={background}
+              Title="Chez vous, partout et ailleurs"
+            />
+          </section>
+          <section>
+            <Cards logements={logements} />
+          </section>
         </div>
         <Footer />
       </div>

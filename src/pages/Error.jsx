@@ -55,11 +55,13 @@ function Error() {
         </Helmet>
         <div className="ContainerMain">
           <Header />
-          <ErrorContainer>
-            <BaliseH1>404</BaliseH1>
-            <BaliseP>Oups! La page demandez n'existe pas.</BaliseP>
-            <BaliseLink to="/">Retourner sur la page d'accueil</BaliseLink>
-          </ErrorContainer>
+          <section>
+            <ErrorContainer>
+              <BaliseH1>404</BaliseH1>
+              <BaliseP>Oups! La page demandez n'existe pas.</BaliseP>
+              <BaliseLink to="/">Retourner sur la page d'accueil</BaliseLink>
+            </ErrorContainer>
+          </section>
         </div>
         <Footer />
       </div>
